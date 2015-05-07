@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>app</title>
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimal-ui" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="yes" />
+
+		<!-- libs -->
+		<script type='application/javascript' src='libs/fastclick.js'></script>
+		<script src='libs/mustache.min.js'></script>
+		<script src='libs/moment.min.js'></script>
+		<script src='libs/jquery-1.11.2.min.js'></script>
+		<script src='libs/underscore-min.js'></script>
+		<script src='libs/backbone-min.js'></script>
+		<link rel="stylesheet" type="text/css" href="libs/bootstrap/bootstrap.min.css">
+		<script src='libs/bootstrap/bootstrap.min.js'></script>
+		<!-- ---- -->
+
+		<!-- utils -->
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script src='utils/utils.js'></script>
+		<!-- ----- -->
+
+		<!-- per_diem -->
+		<script src='models/per_diem.js'></script>
+		<script src='collections/per_diem_days.js'></script>
+		<link rel="stylesheet" type="text/css" href="components/per_diem/per_diem.css">
+		<script src='components/per_diem/per_diem.js'></script>
+		<!-- -------- -->
+
+		<!-- options -->
+		<script src='models/options.js'></script>
+		<link rel="stylesheet" type="text/css" href="components/options/options.css">
+		<script src='components/options/options.js'></script>
+		<!-- -------- -->
+
+		<!-- router -->
+		<script src='components/router.js'></script>
+		<!-- ------ -->
+
+		<script src='app.js'></script>
+		<script>
+			$(function() {
+				FastClick.attach(document.body);
+			});
+			$( document ).ready(function() {
+				new App();
+			});
+		</script>
+
+	</head>
+	<body oncopy="return false" oncut="return false" onpaste="return false">
+		<div id='app-head'>
+			<div style="text-align: center;">
+				<span class="main-name">Calendar</span>
+				<br />
+				<span class="extantion-name">daily expenses</span>
+			</div>
+			<div class="btn btn-default btn-options"></div>
+
+		</div>
+		<div id='main-content'>
+			<!--
+			<div id="per-diem-container"></div>
+			<div id="options-container"></div>
+			-->
+		</div>
+		<div id='app-footer'></div>
+	</body>
+</html>

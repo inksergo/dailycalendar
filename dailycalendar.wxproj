@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<winginx>
+  <project>
+    <name>dailycalendar</name>
+    <url>http://dailycalendar/</url>
+    <root>home/dailycalendar</root>
+  </project>
+</winginx>

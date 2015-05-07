@@ -1,0 +1,25 @@
+.per-day-limit {
+  padding: 10px;
+  font-size: 20px;
+  white-space: nowrap;
+}
+.per-day-limit span {
+  padding-right: 5px;
+  line-height: 27px;
+  color: #505050;
+}
+.per-day-limit span.limit-value {
+  font-weight: 800;
+  padding-left: 9px;
+  color: #000;
+}
+.per-day-limit input {
+  display: none;
+}
+.per-day-limit .per-day-limit-input {
+  width: 50px;
+}
+.options-ok-btn {
+  font-size: 20px;
+  padding: 15px 70px;
+}

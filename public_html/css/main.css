@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Underdog";
+  /*��������� �������� ������*/
+  src: url("Underdog-Regular.ttf");
+  /*���� � ������������ ��� �����*/
+}
+body {
+  margin: 0px;
+  background-color: #d9d9d9;
+  font-family: "Underdog";
+  font-size: 20px;
+  -webkit-user-select: none;
+  -webkit-transition: .25s;
+}
+table td {
+  width: 560px;
+  padding: 10px;
+}
+input {
+  border: 1px solid #c7c7c7;
+  border-radius: 4px;
+}
+#app-head {
+  width: 100%;
+  height: 50px;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #669BF2;
+  box-shadow: 0px 0px 20px #5D5D66;
+}
+#app-head #close-app {
+  width: 100px;
+  height: 40px;
+  margin: 20px;
+}
+#app-head #close-app span {
+  margin: 0px;
+  padding: 0px;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 15px;
+  margin-left: -2px;
+}
+#app-head .main-name {
+  font-size: 30px;
+  line-height: 28px;
+}
+#app-head .extantion-name {
+  font-size: 18px;
+  line-height: 13px;
+  margin-left: -8px;
+}
+#app-head .btn-options {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 10px;
+  top: 10px;
+  background-image: url("data:image/png;base64,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");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+#main-content {
+  padding: 0px 10px;
+}
+#main-content #per-diem-container {
+  display: none;
+}
+#main-content #options-container {
+  display: none;
+  min-height: 600px;
+}
+#app-footer {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px 10px 0px 0px;
+  background-color: #669BF2;
+  box-shadow: 0px 0px 20px #5D5D66;
+}
